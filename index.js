@@ -5,13 +5,12 @@ const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Replace with your Universe ID
 const UNIVERSE_ID = "8009764752";
 const API_URL = `https://games.roblox.com/v1/games/votes?universeIds=${UNIVERSE_ID}`;
 
 let cachedLikes = null;
 let lastFetchTime = 0;
-const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
+const CACHE_DURATION = 5 * 60 * 1000; // 5 mins
 
 app.use(cors());
 
