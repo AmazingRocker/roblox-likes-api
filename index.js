@@ -10,7 +10,7 @@ const API_URL = `https://games.roblox.com/v1/games/votes?universeIds=${UNIVERSE_
 
 let cachedLikes = null;
 let lastFetchTime = 0;
-const CACHE_DURATION = 10 * 60 * 1000; // 10 mins
+const CACHE_DURATION = 30 * 60 * 1000; // 10 mins
 
 app.use(cors());
 
